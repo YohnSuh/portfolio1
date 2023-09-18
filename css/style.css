@@ -1,0 +1,116 @@
+body {
+    background-image: url('../images/main_banner1.png');
+}
+.back_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(10px);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: white;
+    color: black;
+}
+
+.hWrap {
+    width: 90%;
+    margin: 0 auto;
+}
+/* 로고 */
+.hrow1 {
+    padding-top: 50px;
+    text-align: center;
+}
+/* 오페라 글라스, 유틸 */
+.hrow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.hrow2 .glass {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 18px;
+}
+.hrow2 .util {
+    display: flex;
+    font-size: 18px;
+}
+.hrow2 .util li {
+    margin: 0 30px;
+}
+/* 메뉴 */
+.hrow3 .gnb{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hrow3 .gnb h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.hrow3 .gnb > li {
+    margin: 0 50px;
+}
+.hrow3 .menu {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+.hrow3  .menu > li {
+    margin: 0 50px;
+    font-size: 24px;
+    padding:  12px 0;
+}
+/* 헤더 끝 */
+
+@media screen and (max-width: 786px) {
+    .hrow1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .hrow1 .logo img {
+        width: 40px;
+    }
+    .hrow1 .hamMenu {
+        position: relative;
+        width: 40px;
+        height: 35px;
+    }
+    .hrow1 .hamMenu span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 10px;
+    }
+    .hrow1 .hamMenu span:nth-child(1) {
+        top: 0;
+    }
+    .hrow1 .hamMenu span:nth-child(2) {
+        top: calc(50% - 5px);
+    }
+    .hrow1 .hamMenu span:nth-child(3) {
+        top: calc(100% - 10px);
+    }
+
+}
