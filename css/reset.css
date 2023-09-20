@@ -6,6 +6,10 @@
     font-family: 'Pretendard-Thin';
     src: url('../fonts/Pretendard-Thin.ttf');
 }
+@font-face {
+    font-family: 'GmarketSansTTFBold.ttf';
+    src: url('../fonts/GmarketSansTTFBold.ttf');
+}
 * {
     margin: 0;
     padding: 0;

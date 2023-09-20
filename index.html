@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>드 림 씨 어 터</title>
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/pc.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/plug/slick.min.js"></script>
     <script src="js/script.js" defer></script>
@@ -91,27 +93,232 @@
             <div class="poster1">
                 <a href="#">
                     <img class="mobile_img" src="images/main_poster1.jpg">
-                    <img class="pc_img" src="images/main_banner1.png">
                 </a>
             </div><!--poster1-->
             <div class="poster2">
                 <a href="#">
                     <img class="mobile_img" src="images/main_poster2.jpg">
-                    <img class="pc_img" src="images/main_banner2.png">
                 </a>
             </div><!--poster2-->
             <div class="poster3">
                 <a href="#">
                     <img class="mobile_img" src="images/main_poster3.jpg">
-                    <img class="pc_img" src="images/main_banner3.png">
                 </a>
             </div><!--poster3-->
         </div><!--wrap-->
     </section><!--s1-->
+
     <section class="s2">
         <form>
             <input type="text" placeholder="관람하실 공연을 입력해주세요.">
+            <button class="srch"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
+        <div class="icon_view">
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>오시는길</p>
+                </a>
+            </div><!--icon-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-couch"></i>
+                    <p>좌석배치도</p>
+                </a>
+            </div><!--icon-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>예매안내</p>
+                </a>
+            </div><!--icon-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-gift"></i>
+                    <p>이벤트</p>
+                </a>
+            </div><!--icon-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>FAQ</p>
+                </a>
+            </div><!--icon-->
+        </div><!--icon_view-->
     </section><!--s2-->
+    <section class="s3">
+        <h2>PROGRAM</h2>
+        <div class="tabs">
+            <ul class="list">
+                <li>전체</li>
+                <li>현재/예정 공연</li>
+                <li>지난 공연</li>
+            </ul><!--list-->
+            <div class="content">
+                <!-- 전체 -->
+                <div class="all">
+                    <!--공연1-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster1.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <레미제라블></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연2-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster2.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <오페라의 유령></h4>
+                            <p>2023.3.30 ~ 2023.06.18</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연3-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster3.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <맘마미아!></h4>
+                            <p>2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
+                        </a>
+                    </div><!--concert-->
+                </div><!--all-->
+
+                <!--현재/예정-->
+                <div class="now">
+                    <!--공연1-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster1.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <레미제라블></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연2-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster2.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <오페라의 유령></h4>
+                            <p>2023.3.30 ~ 2023.06.18</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연3-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/main_poster3.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <맘마미아!></h4>
+                            <p>2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
+                        </a>
+                    </div><!--concert-->
+                </div><!--now-->
+
+                <!--지난 공연-->
+                <div class="last">
+                    <!--공연1-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/poster1.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <캣츠></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연2-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/poster2.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <킹키부츠></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연3-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/poster3.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <엘리자벳></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연4-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/poster4.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <지킬앤하이드></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+
+                    <!--공연5-->
+                    <div class="concert">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/poster5.jpg">
+                                <div class="over">
+                                    <a href="#">자세히</a>
+                                </div><!--over-->
+                            </div><!--pic-->
+                            <h4>뮤지컬 <하데스타운></h4>
+                            <p>2023.10.15 ~ 2023.11.19</p>
+                        </a>
+                    </div><!--concert-->
+                </div><!--last-->
+            </div><!--content-->
+        </div><!--tabs-->
+    </section><!--s3-->
 </body>
 </html>

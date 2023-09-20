@@ -1,3 +1,9 @@
+const winWidth = $(window).width();
+
+$("선택자").on("event", function() {
+})
+
+
 if($(window).width() < 393) {
     $('.menu').click(function() {
         $('.hrow2, .hrow3').toggleClass('active');
@@ -31,4 +37,25 @@ $('.s1 .wrap').slick({
 $('.slick-slider button').click(function() {
     $(this).toggleClass('active');
     $(this).parent().siblings().find('button').removeClass('active');
+});
+
+// 공연소개 슬라이드
+$('.s3 .content > div').slick({
+    'prevArrow' :  false
+,   'nextArrow' : false
+});
+
+// if($(window).width() > 393) {
+//     $('.s3 .content > div').slick({
+//         'slideToShow' : 5
+//     ,   'prevArrow' :  false
+//     ,   'nextArrow' : false
+//     });
+// }
+
+// 공연소개 탭메뉴
+$('.s3 .list > li').click(function() {
+    let idx = $(this).index();
+    $('.s3 .content > div').eq(idx).stop().show();
+    $('.s3 .content > div').eq(idx).siblings().stop().hide();
 });
