@@ -185,8 +185,20 @@
     .s2 .icon p {
         font-size: 24px;
     }
+
     /* 공연 안내 */
-    .s3 .tabs {
+    .s3 {
         width: 90%;
+        margin: 0 auto;
+    }
+    .s3 .list {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .s3 .list > li {
+        font-size: 18px;
+    }
+    .s3 .content .concert {
+        margin: 0 15px;
     }
 }

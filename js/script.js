@@ -34,28 +34,40 @@ $('.s1 .wrap').slick({
 ,   'dots': true
 });
 // 메인 배너 슬라이드 버튼
-$('.slick-slider button').click(function() {
+$('.s1 .slick-slider button').click(function() {
     $(this).toggleClass('active');
     $(this).parent().siblings().find('button').removeClass('active');
 });
 
-// 공연소개 슬라이드
+// 공연 소개 슬라이드
 $('.s3 .content > div').slick({
-    'prevArrow' :  false
-,   'nextArrow' : false
+    prevArrow :  false
+,   nextArrow : false
+,   slidesToShow: 5
+,   slidesToScroll: 5
+,   responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3
+            ,   slidesToScroll: 3
+            }
+        },
+        {
+        breakpoint: 393,
+        settings: {
+                slidesToShow: 1
+            ,   slidesToScroll: 1
+            }
+        }
+    ]
 });
-
-// if($(window).width() > 393) {
-//     $('.s3 .content > div').slick({
-//         'slideToShow' : 5
-//     ,   'prevArrow' :  false
-//     ,   'nextArrow' : false
-//     });
-// }
-
 // 공연소개 탭메뉴
 $('.s3 .list > li').click(function() {
     let idx = $(this).index();
     $('.s3 .content > div').eq(idx).stop().show();
     $('.s3 .content > div').eq(idx).siblings().stop().hide();
+    // 공연 소개 슬라이드 초기화
+    $('.s3 .content > div').eq(idx).slick('refresh');
 });
+
