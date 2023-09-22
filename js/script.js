@@ -3,24 +3,33 @@ const winWidth = $(window).width();
 $("선택자").on("event", function() {
 })
 
+// pc에서 스크롤 시 헤더 색상 변하게
+$(window).on('scroll', function() {
+    if($(window).scrollTop()) {
+        $('header').addClass('color');
+    } else {
+        $('header').removeClass('color');
+    }
+});
 
-if($(window).width() < 393) {
-    $('.menu').click(function() {
-        $('.hrow2, .hrow3').toggleClass('active');
-    });
 
-    $('header h3').click(function() {
-        // 모바일 아코디언 메뉴
-        $(this).toggleClass('active');
-        $(this).next().stop().slideToggle();
-        $(this).parent().siblings().find('h3').removeClass('active');
-        $(this).parent().siblings().find('.menu').stop().slideUp();
-    });
-} else {
-    $('header h3').click(function() {
-        // $(this).parents('header').toggleClass('active');
-    });
-}
+// if($(window).width() < 393) {
+//     $('.menu').click(function() {
+//         $('.hrow2, .hrow3').toggleClass('active');
+//     });
+
+//     $('header h3').click(function() {
+//         // 모바일 아코디언 메뉴
+//         $(this).toggleClass('active');
+//         $(this).next().stop().slideToggle();
+//         $(this).parent().siblings().find('h3').removeClass('active');
+//         $(this).parent().siblings().find('.menu').stop().slideUp();
+//     });
+// } else {
+//     $('header h3').click(function() {
+//         // $(this).parents('header').toggleClass('active');
+//     });
+// }
 
 // 모바일 햄버거메뉴 클릭
 $('.hamMenu').click(function() {
@@ -47,7 +56,7 @@ $('.s3 .content > div').slick({
 ,   slidesToScroll: 5
 ,   responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 850,
             settings: {
                 slidesToShow: 3
             ,   slidesToScroll: 3
@@ -71,3 +80,18 @@ $('.s3 .list > li').click(function() {
     $('.s3 .content > div').eq(idx).slick('refresh');
 });
 
+//==============================================================
+// 공지사항
+$('.ntcImgBox').slick({
+    nextArrow : false
+,   prevArrow : false
+});
+
+// ==
+// 뉴스
+if($(window).width() < 758) {
+    $('.newsWrap').slick({
+        nextArrow : false
+    ,   prevArrow : false
+    })
+};

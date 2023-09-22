@@ -179,6 +179,9 @@ header.on {
     padding: 0 20px;
     box-sizing:border-box;
 }
+.s2 form input::placeholder {
+    color: #ccc;
+}
 .s2 form button {
     position: absolute;
     top:50%;
@@ -271,3 +274,93 @@ header.on {
     display: none;
 }
 
+/* 공지사항 */
+.s4 {
+    margin-bottom: 90px;
+    padding: 0 20px;
+}
+.s4 h2 {
+    font-size: 32px;
+    font-family: 'GmarketSansTTFBold.ttf';
+    text-align: center;
+    width: 100%;
+}
+.s4 h2 > a {
+    display: none;
+}
+.s4 .notice {
+    margin-top: 30px;
+}
+.s4 .ntcImgBox img {
+    width: 100%;
+}
+.s4 .ntcInfoBox {
+    text-align: center;
+    margin-top: 20px;
+}
+.s4 .ntcInfoBox > div {
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.s4 .ntcInfoBox .ntc_tit span {
+    font-size: 12px;
+    padding: 2px 5px;
+    background-color: #97C6FD;
+    border-radius: 3px;
+}
+.s4 .ntcInfoBox .ticket span {
+    background-color: #FD979A;
+}
+.s4 .ntcInfoBox .ntc_cont {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.s4 .ntcInfoBox .ntc_date {
+    display: none;
+}
+.s4 .ntcMore a {
+    display: block;
+    margin: 20px auto 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #ccc;
+}
+/* 뉴스 */
+.s5 {}
+.s5 h2 {}
+.s5 .newsWrap {
+    /* display: flex; */
+}
+.s5 .news_item {
+    position: relative;
+    width: 273px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px #ccc;
+}
+.s5 .newsWrap .news_img {
+    height: 176px;
+    overflow: hidden;
+}
+.s5 .newsWrap .news_img img {
+    width: 100%;
+}
+.s5 .newsWrap .news_cont {
+    padding: 10px;
+}
+.s5 .newsWrap .news_more {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    color: #ccc;
+}

@@ -1,11 +1,12 @@
 @media screen and (min-width: 850px) {
     header {
         background-color: transparent;
+        transition: .5s;
     }
     .hWrap {
         padding: 0;
         width: 90%;
-        margin: 40px auto;
+        margin: 40px auto 0;
     }
     /* 로고, 햄버거 메뉴 */
     .hrow1 {
@@ -24,9 +25,7 @@
         justify-content: space-between;
         align-items: flex-end;
         border-bottom: 1px solid white;
-        padding-bottom: 10px;
         margin-top: 20px;
-        margin-bottom: 20px;
     }
     .hrow2 .glass {
         padding: 8px 12px;
@@ -61,7 +60,7 @@
         margin: 0 50px;
     }
     .hrow3 .menu {
-        display: none;
+        /* display: none; */
         justify-content: center;
         position: fixed;
         left: 0;
@@ -87,6 +86,24 @@
     header.active .gnb {
         color: black;
         border-color: black;
+    }
+    /* 헤더 스크롤 시 */
+    header.color {
+        background-color: white;
+        box-shadow: 1px 0 5px #aaa;
+    }
+    header.color .hrow2 {
+        border-bottom: 1px solid #aaa;
+    }
+    header.color .glass {
+        color: #aaa;
+        border: 2px solid #aaa;
+    }
+    header.color .util {
+        color: #aaa;
+    }
+    header.color .gnb {
+        color: #aaa;
     }
     /* 헤더 끝 */
 
@@ -180,25 +197,113 @@
         margin: 150px auto 0;
     }
     .s2 .icon {
-        font-size: 64px;
+        font-size: 48px;
     }
     .s2 .icon p {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     /* 공연 안내 */
     .s3 {
         width: 90%;
         margin: 0 auto;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    .s3 h2 {
+        font-size: 64px;
     }
     .s3 .list {
         margin-top: 100px;
         margin-bottom: 50px;
     }
     .s3 .list > li {
-        font-size: 18px;
+        font-size: 24px;
     }
     .s3 .content .concert {
         margin: 0 15px;
+    }
+    .s3 .content .date {
+        font-size: 18px;
+    }
+    .s3 .pic {
+        position: relative;
+    }
+    .s3 .over {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+        backdrop-filter: blur(10px);
+    }
+    .s3 .over p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 8px 28px;
+        background-color: #DA2127;
+        color: white;
+        font-weight: bold;
+    }
+    .s3 .concert:hover .over {
+        display: block;
+    }
+    /* 공지사항 */
+    .s4 {
+        width: 90%;
+        margin: 150px auto 0;
+        padding-bottom: 100px;
+    }
+    .s4 h2 {
+        font-size: 64px;
+    }
+    .s4 h2 > a {
+        display: inline-block;
+        margin: 20px auto 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: #ccc;
+    }
+    .s4 .notice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .s4 .ntcImgBox {
+        width: 50%;
+    }
+    .s4 .ntcInfoBox {
+        width: 50%;
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .s4 .ntcInfoBox > div a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .s4 .ntcInfoBox .ntc_tit span {
+        font-size: 24px;
+    }
+    .s4 .ntcInfoBox .ntc_cont {
+        font-size: 24px;
+        margin: 16px 0;
+    }
+    .s4 .ntcInfoBox .ntc_date {
+        display: block;
+        font-size: 24px;
+    }
+    .s4 .ntcMore {
+        display: none;
     }
 }
