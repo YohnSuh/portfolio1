@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 980px) {
     header {
         background-color: transparent;
         transition: .5s;
@@ -134,7 +134,7 @@
     .s1 .mobile_img {
         display: none;
     }
-    .s1 .slick-dots {
+    .s1 ul.slick-dots {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -280,11 +280,14 @@
         margin-top: 100px;
     }
     .s4 .ntcImgBox {
-        width: 50%;
+        width: 40%;
     }
     .s4 .ntcInfoBox {
-        width: 50%;
+        width: 60%;
         margin-left: 30px;
+        margin-top: 0;
+    }
+    .s4 .ntcInfoBox > div:first-child {
         margin-top: 0;
     }
     .s4 .ntcInfoBox > div a {
@@ -305,5 +308,73 @@
     }
     .s4 .ntcMore {
         display: none;
+    }
+    /* 뉴스 */
+    .s5 {
+        width: 90%;
+        margin: 150px auto 0;
+    }
+    .s5 h2 {
+        font-size: 64px;
+    }
+    .s5 .newsWrap {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+    }
+    .s5 .newsWrap .news_item {
+        width: 24%;
+        height: 500px;
+        margin: 0;
+    }
+    .s5 .newsWrap .news_img {
+        height: 350px;
+    }
+    .s5 .newsWrap .news_cont {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .s5 .newsWrap .news_more {
+        font-size: 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 300px;
+    }
+    footer .fWrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer .frow1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .frow1 > div {
+        display: flex;
+        align-items: center;
+    }
+    footer .frow1 .map {
+        display: flex;
+        margin-left: 30px;
+        font-size: 16px;
+    }
+    footer .frow1 .map li:before {
+        content: '|';
+        margin: 0 10px;
+    }
+    footer .frow1 .map li:first-child::before,
+    footer .frow1 .map li:last-child::before {
+        content: none;
+    }
+    footer .frow1 .sns li {
+        font-size: 32px;
+        margin: 0 20px;
+    }
+    footer .frow2 {
+        font-size: 16px;
     }
 }

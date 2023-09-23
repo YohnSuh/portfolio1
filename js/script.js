@@ -1,7 +1,7 @@
 const winWidth = $(window).width();
 
-$("선택자").on("event", function() {
-})
+// $("선택자").on("event", function() {
+// });
 
 // pc에서 스크롤 시 헤더 색상 변하게
 $(window).on('scroll', function() {
@@ -33,14 +33,26 @@ $(window).on('scroll', function() {
 
 // 모바일 햄버거메뉴 클릭
 $('.hamMenu').click(function() {
-    $('header, .hrow2, .hrow3, .hamMenu').toggleClass('on');
+    $('header, .hrow2, .hrow3, .hamMenu, .back_bg').toggleClass('mobile-menu-on');
+});
+// 모바일 햄버거메뉴 클릭 후 뒷배경 클릭
+$('.back_bg').click(function() {
+    $('header, .hrow2, .hrow3, .hamMenu, .back_bg').removeClass('mobile-menu-on');
+});
+// 모바일 스크롤 시 햄버거메뉴 색상 변화
+$(window).on('scroll', function() {
+    if($(window).scrollTop()) {
+        $('header').addClass('color');
+    } else {
+        $('header').removeClass('color');
+    }
 });
 
 // 메인 배너 슬라이드
-$('.s1 .wrap').slick({
-    'prevArrow': false
-,   'nextArrow': false
-,   'dots': true
+$('.wrap').slick({
+    prevArrow: false
+,   nextArrow: false
+,   dots: true
 });
 // 메인 배너 슬라이드 버튼
 $('.s1 .slick-slider button').click(function() {
@@ -87,11 +99,33 @@ $('.ntcImgBox').slick({
 ,   prevArrow : false
 });
 
-// ==
+//==============================================================
 // 뉴스
-if($(window).width() < 758) {
-    $('.newsWrap').slick({
-        nextArrow : false
-    ,   prevArrow : false
-    })
-};
+$(window).resize(function() {
+    if(window.innerWidth > 850) {
+        $('.newsWrap').slick('unslick');
+    } else {
+        $('.newsWrap').slick({
+            nextArrow : false
+        ,   prevArrow : false
+        ,   centerMode : true
+        ,   centerPadding: '40px'
+        ,   responsive: [
+            {
+                breakpoint: 978,
+                settings: {
+                    slidesToShow: 3
+                ,   slidesToScroll: 3
+                }
+            },
+            {
+            breakpoint: 393,
+            settings: {
+                    slidesToShow: 1
+                ,   slidesToScroll: 1
+                }
+            }
+        ]
+        });
+    }
+});

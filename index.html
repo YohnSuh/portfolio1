@@ -14,500 +14,544 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="back_bg"></div><!--헤더 뒷배경-->
-    <header>
-        <div class="hWrap">
-            <div class="hrow1">
-                <div class="logo">
+    <div class="minWidth">
+        <div class="back_bg"></div><!--헤더 뒷배경-->
+        <header>
+            <div class="hWrap">
+                <div class="hrow1">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png">
+                        </a>
+                    </div><!--logo-->
+                    <div class="hamMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!--hamMenu; 모바일-->
+                </div><!--hrow1 | 로고, 햄버거메뉴-->
+                <div class="hrow2">
+                    <a class="glass" href="#">오페라글라스 대여</a>
+                    <ul class="util">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Eng</a></li>
+                    </ul><!--util-->
+                </div><!--hrow2 | 오페라글라스, 제목, 유틸-->
+                <div class="hrow3">
+                    <ul class="gnb">
+                        <li>
+                            <h3>드림씨어터</h3>
+                            <ul class="menu">
+                                <li><a href="#">공간안내</a></li>
+                                <li><a href="#">좌석배치도</a></li>
+                                <li><a href="#">부가서비스</a></li>
+                                <li><a href="#">오시는길</a></li>
+                                <li><a href="#">공연장소개</a></li>
+                            </ul><!--menu-->
+                        </li>
+                        <li>
+                            <h3>공연/예매</h3>
+                            <ul class="menu">
+                                <li><a href="#">공연안내</a></li>
+                                <li><a href="#">공연일정</a></li>
+                                <li><a href="#">예매안내</a></li>
+                            </ul><!--menu-->
+                        </li>
+                        <li>
+                            <h3>대관</h3>
+                            <ul class="menu">
+                                <li><a href="#">대관절차</a></li>
+                                <li><a href="#">대관시설</a></li>
+                                <li><a href="#">대관료</a></li>
+                            </ul><!--menu-->
+                        </li>
+                        <li>
+                            <h3>멤버십</h3>
+                            <ul class="menu">
+                                <li><a href="#">멤버십안내</a></li>
+                                <li><a href="#">회원이벤트</a></li>
+                            </ul><!--menu-->
+                        </li>
+                        <li>
+                            <h3>이용안내</h3>
+                            <ul class="menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">장애인이용안내</a></li>
+                                <li><a href="#">제휴할인</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul><!--menu-->
+                        </li>
+                    </ul><!--gnb-->
+                </div><!--hrow3 | 메뉴-->
+            </div><!--hWrap-->
+        </header>
+        <!--헤더 끝-->
+
+        <section class="s1">
+            <div class="wrap">
+                <div class="poster1">
                     <a href="#">
-                        <img src="images/logo.png">
+                        <img class="mobile_img" src="images/main_poster1.jpg">
                     </a>
-                </div><!--logo-->
-                <div class="hamMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div><!--hamMenu; 모바일-->
-            </div><!--hrow1 | 로고, 햄버거메뉴-->
-            <div class="hrow2">
-                <a class="glass" href="#">오페라글라스 대여</a>
-                <ul class="util">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Eng</a></li>
-                </ul><!--util-->
-            </div><!--hrow2 | 오페라글라스, 제목, 유틸-->
-            <div class="hrow3">
-                <ul class="gnb">
-                    <li>
-                        <h3>드림씨어터</h3>
-                        <ul class="menu">
-                            <li><a href="#">공간안내</a></li>
-                            <li><a href="#">좌석배치도</a></li>
-                            <li><a href="#">부가서비스</a></li>
+                </div><!--poster1-->
+                <div class="poster2">
+                    <a href="#">
+                        <img class="mobile_img" src="images/main_poster2.jpg">
+                    </a>
+                </div><!--poster2-->
+                <div class="poster3">
+                    <a href="#">
+                        <img class="mobile_img" src="images/main_poster3.jpg">
+                    </a>
+                </div><!--poster3-->
+            </div><!--wrap-->
+        </section><!--s1-->
+        <section class="s2">
+            <form>
+                <input type="text" placeholder="관람하실 공연을 입력해주세요.">
+                <button class="srch"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="icon_view">
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>오시는길</p>
+                    </a>
+                </div><!--icon-->
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-solid fa-couch"></i>
+                        <p>좌석배치도</p>
+                    </a>
+                </div><!--icon-->
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-solid fa-ticket"></i>
+                        <p>예매안내</p>
+                    </a>
+                </div><!--icon-->
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-solid fa-gift"></i>
+                        <p>이벤트</p>
+                    </a>
+                </div><!--icon-->
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <p>FAQ</p>
+                    </a>
+                </div><!--icon-->
+            </div><!--icon_view-->
+        </section><!--s2-->
+        <section class="s3">
+            <h2>PROGRAM</h2>
+            <div class="tabs">
+                <ul class="list">
+                    <li>전체</li>
+                    <li>현재/예정 공연</li>
+                    <li>지난 공연</li>
+                </ul><!--list-->
+                <div class="content">
+                    <!-- 전체 -->
+                    <div class="all">
+                        <!--공연1-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster1.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <레미제라블></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연2-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster2.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <오페라의 유령></h4>
+                                <p class="date">2023.3.30 ~ 2023.06.18</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연3-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster3.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <맘마미아!></h4>
+                                <p class="date">2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
+                            </a>
+                        </div><!--concert-->
+                        <!--공연4-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster1.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <캣츠></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연5-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster7.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <젠틀맨스 가이드></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연6-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster3.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <엘리자벳></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연7-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster4.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <지킬앤하이드></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연8-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster5.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <하데스타운></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+                    </div><!--all-->
+
+                    <!--현재/예정-->
+                    <div class="now">
+                        <!--공연1-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster1.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <레미제라블></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연2-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster2.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <오페라의 유령></h4>
+                                <p class="date">2023.3.30 ~ 2023.06.18</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연3-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/main_poster3.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <맘마미아!></h4>
+                                <p class="date">2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
+                            </a>
+                        </div><!--concert-->
+                    </div><!--now-->
+
+                    <!--지난 공연-->
+                    <div class="last">
+                        <!--공연1-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster1.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <캣츠></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연2-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster7.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <젠틀맨스 가이드></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연3-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster3.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <엘리자벳></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연4-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster4.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <지킬앤하이드></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+
+                        <!--공연5-->
+                        <div class="concert">
+                            <a href="#">
+                                <div class="pic">
+                                    <img src="images/poster5.jpg">
+                                    <div class="over">
+                                        <p>자세히</p>
+                                    </div><!--over-->
+                                </div><!--pic-->
+                                <h4>뮤지컬 <하데스타운></h4>
+                                <p class="date">2023.10.15 ~ 2023.11.19</p>
+                            </a>
+                        </div><!--concert-->
+                    </div><!--last-->
+                </div><!--content-->
+            </div><!--tabs-->
+        </section><!--s3-->
+
+        <!-- 공지사항 -->
+        <section class="s4">
+            <h2>NOTICE
+                <a href="#">+</a>
+            </h2>
+            <div class="notice">
+                <div class="ntcImgBox">
+                    <div class="ntc_img1">
+                        <a href="#">
+                            <img src="images/ntc1.jpg">
+                        </a>
+                    </div><!--ntc_img1-->
+                    <div class="ntc_img2">
+                        <a href="#">
+                            <img src="images/ntc2.png">
+                        </a>
+                    </div><!--ntc_img2-->
+                    <div class="ntc_img3">
+                        <a href="#">
+                            <img src="images/ntc3.png">
+                        </a>
+                    </div><!--ntc_img3-->
+                </div><!--ntc_img-->
+
+                <div class="ntcInfoBox">
+                    <div class="ntc_info1">
+                        <a href="#">
+                            <div class="ntc_tit ticket"><span>티켓오픈</span></div>
+                            <div class="ntc_cont">뮤지컬 <레미제라블> 부산 프리뷰 티켓오픈!</div>
+                            <div class="ntc_date">2023.09.12</div>
+                        </a>
+                    </div><!--ntc_info1-->
+                    <div class="ntc_info2">
+                        <a href="#">
+                            <div class="ntc_tit "><span>공지사항</span></div>
+                            <div class="ntc_cont">드림씨어터 2024년 대관료 및 대관 세부 사항 변경...</div>
+                            <div class="ntc_date">2023.09.01</div>
+                        </a>
+                    </div><!--ntc_info2-->
+                    <div class="ntc_info3">
+                        <a href="#">
+                            <div class="ntc_tit"><span>공지사항</span></div>
+                            <div class="ntc_cont">드림씨어터 사전 차량 등록(주차 정산) 안내</div>
+                            <div class="ntc_date">2023.08.24</div>
+                        </a>
+                    </div><!--ntc_info3-->
+                    <div class="ntc_info4">
+                        <a href="#">
+                            <div class="ntc_tit"><span>공지사항</span></div>
+                            <div class="ntc_cont">〈오페라의 유령〉 5/28(일)~5/29(월) 공연 취소 안내</div>
+                            <div class="ntc_date">2023.05.27</div>
+                        </a>
+                    </div><!--ntc_info4-->
+                    <div class="ntc_info5">
+                        <a href="#">
+                            <div class="ntc_tit ticket"><span>티켓오픈</span></div>
+                            <div class="ntc_cont">뮤지컬 <오페라의 유령> 부산 프리뷰 티켓오픈!   </div>
+                            <div class="ntc_date">2023.03.12</div>
+                        </a>
+                    </div><!--ntc_info5-->
+                </div><!--ntcInfoBox-->
+            </div><!--notice-->
+            <div class="ntcMore">
+                <a href="#">+</a>
+            </div><!--ntcMore-->
+        </section><!--s4-->
+        <section class="s5">
+            <h2>NEWS</h2>
+            <div class="newsWrap">
+                <div class="news_item">
+                    <div class="news_img">
+                        <img src="images/news1.jpg">
+                    </div><!--news_img-->
+                    <div class="news_cont">
+                        <h4>설도권 드림씨어터 대표 “서울 아닌 부산에 뮤지컬 극장...지역거점 늘려야 시장도 커지죠”</h4>
+                    </div><!--news_cont-->
+                    <div class="news_more">
+                        <a href="#">자세히</a>
+                    </div><!--new_more-->
+                </div><!--news_item-->
+
+                <div class="news_item">
+                    <div class="news_img">
+                        <img src="images/news2.jpg">
+                    </div><!--news_img-->
+                    <div class="news_cont">
+                        <h4>드림씨어터 "뮤지컬 '레미제라블', 청소년 400명 초대합니다"</h4>
+                    </div><!--news_cont-->
+                    <div class="news_more">
+                        <a href="#">자세히</a>
+                    </div><!--new_more-->
+                </div><!--news_item-->
+
+                <div class="news_item">
+                    <div class="news_img">
+                        <img src="images/news3.jpg">
+                    </div><!--news_img-->
+                    <div class="news_cont">
+                        <h4>설도권 드림씨어터 대표 "오페라의 유령' 지역 최장기 공연 넘어 꼭 이루고 싶은 숙제 있죠"</h4>
+                    </div><!--news_cont-->
+                    <div class="news_more">
+                        <a href="#">자세히</a>
+                    </div><!--new_more-->
+                </div><!--news_item-->
+
+                <div class="news_item">
+                    <div class="news_img">
+                        <img src="images/news4.jpg">
+                    </div><!--news_img-->
+                    <div class="news_cont">
+                        <h4>드림씨어터, '오페라의 유령'을 다각도로 즐길 수 있는 '드림 클래스' 개최</h4>
+                    </div><!--news_cont-->
+                    <div class="news_more">
+                        <a href="#">자세히</a>
+                    </div><!--new_more-->
+                </div><!--news_item-->
+                
+            </div><!--newsWrap-->
+        </section><!--s5-->
+        <footer>
+            <div class="fWrap">
+                <div class="frow1">
+                    <div>
+                        <h2>
+                            <a href="#">
+                                <img src="images/logo_dream.png">
+                            </a>
+                        </h2>
+                        <ul class="map">
                             <li><a href="#">오시는길</a></li>
-                            <li><a href="#">공연장소개</a></li>
-                        </ul><!--menu-->
-                    </li>
-                    <li>
-                        <h3>공연/예매</h3>
-                        <ul class="menu">
-                            <li><a href="#">공연안내</a></li>
-                            <li><a href="#">공연일정</a></li>
-                            <li><a href="#">예매안내</a></li>
-                        </ul><!--menu-->
-                    </li>
-                    <li>
-                        <h3>대관</h3>
-                        <ul class="menu">
-                            <li><a href="#">대관절차</a></li>
-                            <li><a href="#">대관시설</a></li>
-                            <li><a href="#">대관료</a></li>
-                        </ul><!--menu-->
-                    </li>
-                    <li>
-                        <h3>멤버십</h3>
-                        <ul class="menu">
-                            <li><a href="#">멤버십안내</a></li>
-                            <li><a href="#">회원이벤트</a></li>
-                        </ul><!--menu-->
-                    </li>
-                    <li>
-                        <h3>이용안내</h3>
-                        <ul class="menu">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">장애인이용안내</a></li>
-                            <li><a href="#">제휴할인</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul><!--menu-->
-                    </li>
-                </ul><!--gnb-->
-            </div><!--hrow3 | 메뉴-->
-        </div><!--hWrap-->
-    </header>
-    <!--헤더 끝-->
-
-    <section class="s1">
-        <div class="wrap">
-            <div class="poster1">
-                <a href="#">
-                    <img class="mobile_img" src="images/main_poster1.jpg">
-                </a>
-            </div><!--poster1-->
-            <div class="poster2">
-                <a href="#">
-                    <img class="mobile_img" src="images/main_poster2.jpg">
-                </a>
-            </div><!--poster2-->
-            <div class="poster3">
-                <a href="#">
-                    <img class="mobile_img" src="images/main_poster3.jpg">
-                </a>
-            </div><!--poster3-->
-        </div><!--wrap-->
-    </section><!--s1-->
-
-    <section class="s2">
-        <form>
-            <input type="text" placeholder="관람하실 공연을 입력해주세요.">
-            <button class="srch"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <div class="icon_view">
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>오시는길</p>
-                </a>
-            </div><!--icon-->
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-solid fa-couch"></i>
-                    <p>좌석배치도</p>
-                </a>
-            </div><!--icon-->
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-solid fa-ticket"></i>
-                    <p>예매안내</p>
-                </a>
-            </div><!--icon-->
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-solid fa-gift"></i>
-                    <p>이벤트</p>
-                </a>
-            </div><!--icon-->
-            <div class="icon">
-                <a href="#">
-                    <i class="fa-solid fa-comment-dots"></i>
-                    <p>FAQ</p>
-                </a>
-            </div><!--icon-->
-        </div><!--icon_view-->
-    </section><!--s2-->
-    <section class="s3">
-        <h2>PROGRAM</h2>
-        <div class="tabs">
-            <ul class="list">
-                <li>전체</li>
-                <li>현재/예정 공연</li>
-                <li>지난 공연</li>
-            </ul><!--list-->
-            <div class="content">
-                <!-- 전체 -->
-                <div class="all">
-                    <!--공연1-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster1.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <레미제라블></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연2-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster2.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <오페라의 유령></h4>
-                            <p class="date">2023.3.30 ~ 2023.06.18</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연3-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster3.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <맘마미아!></h4>
-                            <p class="date">2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
-                        </a>
-                    </div><!--concert-->
-                    <!--공연4-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster1.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <캣츠></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연5-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster7.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <젠틀맨스 가이드></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연6-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster3.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <엘리자벳></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연7-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster4.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <지킬앤하이드></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연8-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster5.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <하데스타운></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-                </div><!--all-->
-
-                <!--현재/예정-->
-                <div class="now">
-                    <!--공연1-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster1.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <레미제라블></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연2-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster2.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <오페라의 유령></h4>
-                            <p class="date">2023.3.30 ~ 2023.06.18</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연3-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/main_poster3.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <맘마미아!></h4>
-                            <p class="date">2023.12.01 ~ 12.03/12.08 ~ 12.10</p>
-                        </a>
-                    </div><!--concert-->
-                </div><!--now-->
-
-                <!--지난 공연-->
-                <div class="last">
-                    <!--공연1-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster1.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <캣츠></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연2-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster7.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <젠틀맨스 가이드></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연3-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster3.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <엘리자벳></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연4-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster4.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <지킬앤하이드></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-
-                    <!--공연5-->
-                    <div class="concert">
-                        <a href="#">
-                            <div class="pic">
-                                <img src="images/poster5.jpg">
-                                <div class="over">
-                                    <p>자세히</p>
-                                </div><!--over-->
-                            </div><!--pic-->
-                            <h4>뮤지컬 <하데스타운></h4>
-                            <p class="date">2023.10.15 ~ 2023.11.19</p>
-                        </a>
-                    </div><!--concert-->
-                </div><!--last-->
-            </div><!--content-->
-        </div><!--tabs-->
-    </section><!--s3-->
-
-    <!-- 공지사항 -->
-    <section class="s4">
-        <h2>NOTICE
-            <a href="#">+</a>
-        </h2>
-        <div class="notice">
-            <div class="ntcImgBox">
-                <div class="ntc_img1">
-                    <a href="#">
-                        <img src="images/ntc1.jpg">
-                    </a>
-                </div><!--ntc_img1-->
-                <div class="ntc_img2">
-                    <a href="#">
-                        <img src="images/ntc2.png">
-                    </a>
-                </div><!--ntc_img2-->
-                <div class="ntc_img3">
-                    <a href="#">
-                        <img src="images/ntc3.png">
-                    </a>
-                </div><!--ntc_img3-->
-            </div><!--ntc_img-->
-
-            <div class="ntcInfoBox">
-                <div class="ntc_info1">
-                    <a href="#">
-                        <div class="ntc_tit ticket"><span>티켓오픈</span></div>
-                        <div class="ntc_cont">뮤지컬 <레미제라블> 부산 프리뷰 티켓오픈!</div>
-                        <div class="ntc_date">2023.09.12</div>
-                    </a>
-                </div><!--ntc_info1-->
-                <div class="ntc_info2">
-                    <a href="#">
-                        <div class="ntc_tit "><span>공지사항</span></div>
-                        <div class="ntc_cont">드림씨어터 2024년 대관료 및 대관 세부 사항 변경...</div>
-                        <div class="ntc_date">2023.09.01</div>
-                    </a>
-                </div><!--ntc_info2-->
-                <div class="ntc_info3">
-                    <a href="#">
-                        <div class="ntc_tit"><span>공지사항</span></div>
-                        <div class="ntc_cont">드림씨어터 사전 차량 등록(주차 정산) 안내</div>
-                        <div class="ntc_date">2023.08.24</div>
-                    </a>
-                </div><!--ntc_info3-->
-                <div class="ntc_info4">
-                    <a href="#">
-                        <div class="ntc_tit"><span>공지사항</span></div>
-                        <div class="ntc_cont">〈오페라의 유령〉 5/28(일)~5/29(월) 공연 취소 안내</div>
-                        <div class="ntc_date">2023.05.27</div>
-                    </a>
-                </div><!--ntc_info4-->
-                <div class="ntc_info5">
-                    <a href="#">
-                        <div class="ntc_tit ticket"><span>티켓오픈</span></div>
-                        <div class="ntc_cont">뮤지컬 <오페라의 유령> 부산 프리뷰 티켓오픈!   </div>
-                        <div class="ntc_date">2023.03.12</div>
-                    </a>
-                </div><!--ntc_info5-->
-            </div><!--ntcInfoBox-->
-        </div><!--notice-->
-        <div class="ntcMore">
-            <a href="#">+</a>
-        </div><!--ntcMore-->
-    </section><!--s4-->
-    <section class="s5">
-        <h2>NEWS</h2>
-        <div class="newsWrap">
-            <div class="news_item">
-                <div class="news_img">
-                    <img src="images/news1.jpg">
-                </div><!--news_img-->
-                <div class="news_cont">
-                    <h4>설도권 드림씨어터 대표 “서울 아닌 부산에 뮤지컬 극장...지역거점 늘려야 시장도 커지죠”</h4>
-                </div><!--news_cont-->
-                <div class="news_more">
-                    <a href="#">자세히</a>
-                </div><!--new_more-->
-            </div><!--news_item-->
-
-            <div class="news_item">
-                <div class="news_img">
-                    <img src="images/news2.jpg">
-                </div><!--news_img-->
-                <div class="news_cont">
-                    <h4>드림씨어터 "뮤지컬 '레미제라블', 청소년 400명 초대합니다"</h4>
-                </div><!--news_cont-->
-                <div class="news_more">
-                    <a href="#">자세히</a>
-                </div><!--new_more-->
-            </div><!--news_item-->
-
-            <div class="news_item">
-                <div class="news_img">
-                    <img src="images/news3.jpg">
-                </div><!--news_img-->
-                <div class="news_cont">
-                    <h4>설도권 드림씨어터 대표 "오페라의 유령' 지역 최장기 공연 넘어 꼭 이루고 싶은 숙제 있죠"</h4>
-                </div><!--news_cont-->
-                <div class="news_more">
-                    <a href="#">자세히</a>
-                </div><!--new_more-->
-            </div><!--news_item-->
-
-            <div class="news_item">
-                <div class="news_img">
-                    <img src="images/news4.jpg">
-                </div><!--news_img-->
-                <div class="news_cont">
-                    <h4>드림씨어터, '오페라의 유령'을 다각도로 즐길 수 있는 '드림 클래스' 개최</h4>
-                </div><!--news_cont-->
-                <div class="news_more">
-                    <a href="#">자세히</a>
-                </div><!--new_more-->
-            </div><!--news_item-->
-            
-        </div><!--newsWrap-->
-    </section><!--s5-->
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+                        </ul><!--map-->
+                    </div>
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-blogger-b"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul><!--sns-->
+                </div><!--frow1-->
+                <div class="frow2">
+                    <p>주소 : 부산광역시 남구 전포대로 133, 3층 | 대표 : 설도권</p>
+                    <p>사업자등록번호 : 211-86-93404 | 통신판매신고번호 : 제2008-서울강남-2331호</p>
+                    <p>전화 : 1833-3755 | Mail : webmaster@dreamtheatre.co.kr</p>
+                    <p>Copyright 2019 CLIP SERVICE Inc. All Right reserved.</p>
+                </div><!--frow2-->
+            </div><!--fWrap-->
+        </footer>
+    </div>
 </body>
 </html>
