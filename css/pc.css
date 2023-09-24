@@ -1,4 +1,4 @@
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1440px) {
     header {
         background-color: transparent;
         transition: .5s;
@@ -88,21 +88,17 @@
         border-color: black;
     }
     /* 헤더 스크롤 시 */
-    header.color {
-        background-color: white;
-        box-shadow: 1px 0 5px #aaa;
-    }
-    header.color .hrow2 {
+    header.header-color .hrow2 {
         border-bottom: 1px solid #aaa;
     }
-    header.color .glass {
+    header.header-color .glass {
         color: #aaa;
         border: 2px solid #aaa;
     }
-    header.color .util {
+    header.header-color .util {
         color: #aaa;
     }
-    header.color .gnb {
+    header.header-color .gnb {
         color: #aaa;
     }
     /* 헤더 끝 */
@@ -112,8 +108,6 @@
         width: 100%;
         height: 100vh;
     }
-    .s1 .wrap {}
-    .s1 .wrap > div {}
     .s1 .wrap > div a {
         display: block;
         width: 100%;
@@ -145,7 +139,8 @@
         padding: 30px 0;
         background-color: rgba(0, 0, 0, .4);
     }
-    .s1 .slick-dots button {
+    .s1 ul.slick-dots button {
+        display: block;
         position: relative;
         border: 0;
         width: 150px;
@@ -162,10 +157,11 @@
     .s1 .slick-dots li:nth-child(3) button {
         background: url('../images/main_poster3.jpg') no-repeat center / cover;
     }
-    .s1 .slick-dots button.active {
+    /* 활성화 중인 버튼 */
+    .s1 .slick-dots li.slick-active button {
         border: 5px solid #aaa;
     }
-    .s1 .slick-dots button.active::before {
+    .s1 .slick-dots li.slick-active button:before {
         content: '';
         position: absolute;
         top:0;
@@ -174,6 +170,7 @@
         height: 100%;
         background-color: rgba(0,0,0,.5);
     }
+
     /* 검색, 카테고리 */
     .s2 {
         margin: 200px auto;

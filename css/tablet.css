@@ -1,3 +1,39 @@
-@media  screen and (min-width: 1024px) {
-    
+@media  screen and (min-width: 768px) {
+    /* 검색, 카테고리 */
+    .s2 form {
+        width: 600px;
+    }
+    .s2 form input {
+        font-size: 20px;
+        height: 60px;
+    }
+    .s2 .icon_view {
+        width: 600px;
+    }
+    .s2 .icon {
+        font-size: 36px;
+    }
+    .s2 .icon p {
+        font-size: 16px;
+    }
+    /* 공연 안내 */
+    .s3 .content .concert {
+        margin: 0 5px;
+    }
+    /* 뉴스 */
+    .s5 .newsWrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .s5 .news_item {
+        width: 45%;
+        height: 350px;
+    }
+    .s5 .newsWrap .news_img {
+        height: 200px;
+    }
+    .s5 .newsWrap .news_cont {
+        font-size: 20px;
+    }
 }
