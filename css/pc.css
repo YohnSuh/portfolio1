@@ -1,15 +1,16 @@
 @media screen and (min-width: 1440px) {
     header {
         background-color: transparent;
-        transition: .5s;
     }
     .hWrap {
+        z-index: 999;
         padding: 0;
         width: 90%;
         margin: 40px auto 0;
     }
     /* 로고, 햄버거 메뉴 */
     .hrow1 {
+        position: relative;
         display: block;
         text-align: center;
     }
@@ -45,7 +46,7 @@
     .hrow3 {
         display: block;
     }
-    .hrow3 .gnb {
+    header .hrow3 .gnb {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -53,7 +54,6 @@
     }
     .hrow3 .gnb h3 {
         font-size: 24px;
-        /* margin-bottom: 10px; */
         cursor: pointer;
     }
     .hrow3 .gnb > li {
@@ -68,6 +68,7 @@
         font-size: 24px;
         border-top: 1px solid white;
         padding-bottom: 0;
+        box-shadow: 1px 0 5px #aaa;
     }
     .hrow3  .menu > li {
         margin: 10px 50px;
@@ -75,19 +76,19 @@
     .hrow3 .menu > li:last-child {
         margin-bottom: 0px;
     }
-    /* header 클릭 시 */
-    header.active,
-    header.active .menu {
-        background-color: white;
+    /* 모바일 -> pc 배경 없애기 */
+    .back_bg.mobile-bg-on {
+        display: none;
     }
-    header.active .glass,
-    header.active .hrow2, 
-    header.active .util,
-    header.active .gnb {
-        color: black;
-        border-color: black;
+    /* 모바일 -> pc 헤더 배경색 없애기*/
+    header.mobile-menu-on{
+        background-color: transparent;
     }
     /* 헤더 스크롤 시 */
+    header.header-color {
+        background-color: white;
+        box-shadow: 1px 0 5px #aaa;
+    }
     header.header-color .hrow2 {
         border-bottom: 1px solid #aaa;
     }
@@ -101,6 +102,29 @@
     header.header-color .gnb {
         color: #aaa;
     }
+    /* 헤더 hover 시 헤더 색상 변화 */
+    header:hover {
+        background-color: white;
+    }
+    header:hover .hrow2 {
+        border-bottom: 1px solid #aaa;
+    }
+    header:hover .glass {
+        color: #aaa;
+        border: 2px solid #aaa;
+    }
+    header:hover .util {
+        color: #aaa;
+    }
+    header:hover .hrow3 .gnb {
+        color: #aaa;
+    }
+    header .gnb > li:hover .menu {
+        display: flex;
+        background-color: white;
+        color: #aaa;
+    }
+    
     /* 헤더 끝 */
 
     /* 메인 배너 */
@@ -147,6 +171,7 @@
         height: 215px;
         margin: 0 5px;
         font-size: 0;
+        cursor: pointer;
     }
     .s1 .slick-dots li:nth-child(1) button {
         background: url('../images/main_poster1.jpg') no-repeat center / cover;

@@ -1,3 +1,14 @@
+// 모바일 햄버거 아이콘 클릭
+function hamMenuClick() {
+    $('.back_bg').toggleClass('mobile-bg-on');
+    $('header').toggleClass('mobile-menu-on');
+};
+// 모바일 메뉴 배경 클릭
+function mBackgroundOn() {
+    $('.back_bg').removeClass('mobile-bg-on');
+    $('header').removeClass('mobile-menu-on');
+};
+
 $(document).ready(function() {
 
     const winWidth = $(window).width();
@@ -10,37 +21,11 @@ $(document).ready(function() {
             $('header').removeClass('header-color');
         }
     });
-
-
-    // if($(window).width() < 393) {
-    //     $('.menu').click(function() {
-    //         $('.hrow2, .hrow3').toggleClass('active');
-    //     });
-
-    //     $('header h3').click(function() {
-    //         // 모바일 아코디언 메뉴
-    //         $(this).toggleClass('active');
-    //         $(this).next().stop().slideToggle();
-    //         $(this).parent().siblings().find('h3').removeClass('active');
-    //         $(this).parent().siblings().find('.menu').stop().slideUp();
-    //     });
-    // } else {
-    //     $('header h3').click(function() {
-    //         // $(this).parents('header').toggleClass('active');
-    //     });
-    // }
-
-    // 모바일 햄버거메뉴 클릭
-    $('.hamMenu').click(function() {
-        $('.back_bg').toggleClass('mobile-bg-on');
-        $('header').toggleClass('mobile-menu-on');
-    });
-    // 모바일 햄버거메뉴 클릭 후 뒷배경 클릭
-    $('.back_bg').click(function() {
-        $('.back_bg').removeClass('mobile-bg-on');
-        $('header').removeClass('mobile-menu-on');
-    });
-
+    //==============================================================
+    // 모바일에서 햄버거 메뉴 클릭 시
+    $('.hamMenu').click(hamMenuClick);
+    $('.back_bg').click(mBackgroundOn);
+    //==============================================================
     // 메인 배너 슬라이드
     $('.wrap').slick({
         'prevArrow': false
